@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         obstacle.style.left = obstaclePosition + 'px'
 
         let timerId = setInterval(function() {
-            if (obstaclePosition === 0) {
+            if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
 
                     clearInterval(timerId)
                     alertMessage.innerHTML = 'Game Over'
