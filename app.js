@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // create obstacle
     function generateObstacle(){
         let randomTime = Math.random() * 4000
-        let obstaclePosition = 1400
+        let obstaclePosition = 1400 // change position to fit screen on larger sizes
         const obstacle = document.createElement('div')
         obstacle.classList.add('obstacle')
         grid.appendChild(obstacle)
@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     clearInterval(timerId)
                     alertMessage.innerHTML = 'Game Over'
                     console.log(isGameOver)
+                    if(isGameOver == true){
+                        
+                    }
                 }
             
             obstaclePosition -= 10;
