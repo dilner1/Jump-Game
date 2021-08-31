@@ -50,4 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    function generateObstacle(){
+        let obstaclePosition = 1000
+        const obstacle = document.createElement('div')
+        obstacle.classList.add('obstacle')
+    }
+
 }); 
