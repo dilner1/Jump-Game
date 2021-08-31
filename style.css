@@ -14,3 +14,7 @@
     bottom: 0;
     border-radius: 50%;
 }
+
+#alert {
+    text-align: center;
+}
