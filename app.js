@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 count --
                 position = position * gravity
                 dino.style.bottom = position + 'px'
-            },15)
+            },20)
             
             }
 
@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     clearInterval(timerId)
                     alertMessage.innerHTML = 'Game Over'
+                    console.log(isGameOver)
                 }
             
-
             obstaclePosition -= 10;
             obstacle.style.left = obstaclePosition + 'px'
         }, 20)
